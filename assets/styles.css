@@ -1,3 +1,20 @@
-.entrada {
-    border: 1px solid red;
+.contenedor {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 3rem;
+}
+
+.entrada > a {
+    text-decoration: none !important;
+}
+
+.entrada > a > img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+    } 
 }
