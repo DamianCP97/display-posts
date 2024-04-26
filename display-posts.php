@@ -64,7 +64,7 @@ function mostrar_publicaciones_personalizadas() {
 
 // Función para agregar un shortcode que mostrará las publicaciones
 function agregar_shortcode_publicaciones() {
-    add_shortcode('mostrar_publicaciones', 'mostrar_publicaciones_personalizadas');
+    add_shortcode('publicaciones', 'mostrar_publicaciones_personalizadas');
 }
 
 add_action('init', 'agregar_shortcode_publicaciones'); //Permite ejecutar la función cuando WordPress se inicializa
